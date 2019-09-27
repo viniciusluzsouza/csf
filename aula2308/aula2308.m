@@ -11,8 +11,8 @@ num_bits = 1e6;
 t = [0:1/Rs:num_bits/Rs-(1/Rs)];
 fd = 30; % frequencia doppler
 
-info = randint(1, num_bits, 2); % em 100 transmissoes (amostras)
-% info = randi([0 1], 1, 5000);
+% info = randint(1, num_bits, 2); % em 100 transmissoes (amostras)
+info = randi([0 1], 1, 5000);
 info_mod = pskmod(info, 2);
 
  % 3 (Hz) de doppler - pessoa caminhando (canal estatico):
